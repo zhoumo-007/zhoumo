@@ -1,0 +1,432 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" version="3.0.2" name="com.yupi.yuaiagent.app.LoveAppTest" time="125.475" tests="5" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="java.specification.version" value="21"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="GBK"/>
+    <property name="java.class.path" value="C:\code\yu-ai-agent\target\test-classes;C:\code\yu-ai-agent\target\classes;C:\Users\pc\.m2\repository\org\springframework\boot\spring-boot-starter-web\3.5.4\spring-boot-starter-web-3.5.4.jar;C:\Users\pc\.m2\repository\org\springframework\boot\spring-boot-starter\3.5.4\spring-boot-starter-3.5.4.jar;C:\Users\pc\.m2\repository\org\springframework\boot\spring-boot\3.5.4\spring-boot-3.5.4.jar;C:\Users\pc\.m2\repository\org\springframework\boot\spring-boot-autoconfigure\3.5.4\spring-boot-autoconfigure-3.5.4.jar;C:\Users\pc\.m2\repository\org\springframework\boot\spring-boot-starter-logging\3.5.4\spring-boot-starter-logging-3.5.4.jar;C:\Users\pc\.m2\repository\ch\qos\logback\logback-classic\1.5.18\logback-classic-1.5.18.jar;C:\Users\pc\.m2\repository\ch\qos\logback\logback-core\1.5.18\logback-core-1.5.18.jar;C:\Users\pc\.m2\repository\org\apache\logging\log4j\log4j-to-slf4j\2.24.3\log4j-to-slf4j-2.24.3.jar;C:\Users\pc\.m2\repository\org\apache\logging\log4j\log4j-api\2.24.3\log4j-api-2.24.3.jar;C:\Users\pc\.m2\repository\org\slf4j\jul-to-slf4j\2.0.17\jul-to-slf4j-2.0.17.jar;C:\Users\pc\.m2\repository\jakarta\annotation\jakarta.annotation-api\2.1.1\jakarta.annotation-api-2.1.1.jar;C:\Users\pc\.m2\repository\org\yaml\snakeyaml\2.4\snakeyaml-2.4.jar;C:\Users\pc\.m2\repository\org\springframework\boot\spring-boot-starter-json\3.5.4\spring-boot-starter-json-3.5.4.jar;C:\Users\pc\.m2\repository\com\fasterxml\jackson\datatype\jackson-datatype-jdk8\2.19.2\jackson-datatype-jdk8-2.19.2.jar;C:\Users\pc\.m2\repository\com\fasterxml\jackson\datatype\jackson-datatype-jsr310\2.19.2\jackson-datatype-jsr310-2.19.2.jar;C:\Users\pc\.m2\repository\com\fasterxml\jackson\module\jackson-module-parameter-names\2.19.2\jackson-module-parameter-names-2.19.2.jar;C:\Users\pc\.m2\repository\org\springframework\boot\spring-boot-starter-tomcat\3.5.4\spring-boot-starter-tomcat-3.5.4.jar;C:\Users\pc\.m2\repository\org\apache\tomcat\embed\tomcat-embed-core\10.1.43\tomcat-embed-core-10.1.43.jar;C:\Users\pc\.m2\repository\org\apache\tomcat\embed\tomcat-embed-el\10.1.43\tomcat-embed-el-10.1.43.jar;C:\Users\pc\.m2\repository\org\apache\tomcat\embed\tomcat-embed-websocket\10.1.43\tomcat-embed-websocket-10.1.43.jar;C:\Users\pc\.m2\repository\org\springframework\spring-web\6.2.9\spring-web-6.2.9.jar;C:\Users\pc\.m2\repository\org\springframework\spring-beans\6.2.9\spring-beans-6.2.9.jar;C:\Users\pc\.m2\repository\io\micrometer\micrometer-observation\1.15.2\micrometer-observation-1.15.2.jar;C:\Users\pc\.m2\repository\io\micrometer\micrometer-commons\1.15.2\micrometer-commons-1.15.2.jar;C:\Users\pc\.m2\repository\org\springframework\spring-webmvc\6.2.9\spring-webmvc-6.2.9.jar;C:\Users\pc\.m2\repository\org\springframework\spring-aop\6.2.9\spring-aop-6.2.9.jar;C:\Users\pc\.m2\repository\org\springframework\spring-context\6.2.9\spring-context-6.2.9.jar;C:\Users\pc\.m2\repository\org\springframework\spring-expression\6.2.9\spring-expression-6.2.9.jar;C:\Users\pc\.m2\repository\com\alibaba\dashscope-sdk-java\2.19.1\dashscope-sdk-java-2.19.1.jar;C:\Users\pc\.m2\repository\io\reactivex\rxjava2\rxjava\2.2.21\rxjava-2.2.21.jar;C:\Users\pc\.m2\repository\org\reactivestreams\reactive-streams\1.0.4\reactive-streams-1.0.4.jar;C:\Users\pc\.m2\repository\com\google\code\gson\gson\2.13.1\gson-2.13.1.jar;C:\Users\pc\.m2\repository\com\google\errorprone\error_prone_annotations\2.38.0\error_prone_annotations-2.38.0.jar;C:\Users\pc\.m2\repository\org\slf4j\slf4j-api\2.0.17\slf4j-api-2.0.17.jar;C:\Users\pc\.m2\repository\org\jetbrains\kotlin\kotlin-stdlib-jdk8\1.9.25\kotlin-stdlib-jdk8-1.9.25.jar;C:\Users\pc\.m2\repository\org\jetbrains\kotlin\kotlin-stdlib\1.9.25\kotlin-stdlib-1.9.25.jar;C:\Users\pc\.m2\repository\org\jetbrains\annotations\13.0\annotations-13.0.jar;C:\Users\pc\.m2\repository\org\jetbrains\kotlin\kotlin-stdlib-jdk7\1.9.25\kotlin-stdlib-jdk7-1.9.25.jar;C:\Users\pc\.m2\repository\com\squareup\okio\okio\3.6.0\okio-3.6.0.jar;C:\Users\pc\.m2\repository\com\squareup\okio\okio-jvm\3.6.0\okio-jvm-3.6.0.jar;C:\Users\pc\.m2\repository\org\jetbrains\kotlin\kotlin-stdlib-common\1.9.25\kotlin-stdlib-common-1.9.25.jar;C:\Users\pc\.m2\repository\com\squareup\okhttp3\logging-interceptor\4.12.0\logging-interceptor-4.12.0.jar;C:\Users\pc\.m2\repository\com\squareup\okhttp3\okhttp-sse\4.12.0\okhttp-sse-4.12.0.jar;C:\Users\pc\.m2\repository\com\squareup\okhttp3\okhttp\4.12.0\okhttp-4.12.0.jar;C:\Users\pc\.m2\repository\org\springframework\ai\spring-ai-mcp-client-spring-boot-starter\1.0.0-M6\spring-ai-mcp-client-spring-boot-starter-1.0.0-M6.jar;C:\Users\pc\.m2\repository\org\springframework\ai\spring-ai-mcp-client-spring-boot-autoconfigure\1.0.0-M6\spring-ai-mcp-client-spring-boot-autoconfigure-1.0.0-M6.jar;C:\Users\pc\.m2\repository\org\springframework\ai\spring-ai-mcp\1.0.0-M6\spring-ai-mcp-1.0.0-M6.jar;C:\Users\pc\.m2\repository\io\modelcontextprotocol\sdk\mcp\0.7.0\mcp-0.7.0.jar;C:\Users\pc\.m2\repository\com\alibaba\cloud\ai\spring-ai-alibaba-starter\1.0.0-M6.1\spring-ai-alibaba-starter-1.0.0-M6.1.jar;C:\Users\pc\.m2\repository\com\alibaba\cloud\ai\spring-ai-alibaba-autoconfigure\1.0.0-M6.1\spring-ai-alibaba-autoconfigure-1.0.0-M6.1.jar;C:\Users\pc\.m2\repository\org\springframework\ai\spring-ai-spring-boot-autoconfigure\1.0.0-M6\spring-ai-spring-boot-autoconfigure-1.0.0-M6.jar;C:\Users\pc\.m2\repository\com\alibaba\cloud\ai\spring-ai-alibaba-core\1.0.0-M6.1\spring-ai-alibaba-core-1.0.0-M6.1.jar;C:\Users\pc\.m2\repository\org\springframework\ai\spring-ai-retry\1.0.0-M6\spring-ai-retry-1.0.0-M6.jar;C:\Users\pc\.m2\repository\org\springframework\retry\spring-retry\2.0.12\spring-retry-2.0.12.jar;C:\Users\pc\.m2\repository\org\springframework\spring-webflux\6.2.9\spring-webflux-6.2.9.jar;C:\Users\pc\.m2\repository\commons-codec\commons-codec\1.18.0\commons-codec-1.18.0.jar;C:\Users\pc\.m2\repository\com\alibaba\nacos\nacos-client-mse-extension\1.0.4\nacos-client-mse-extension-1.0.4.jar;C:\Users\pc\.m2\repository\com\aliyun\aliyun-java-sdk-core\4.5.17\aliyun-java-sdk-core-4.5.17.jar;C:\Users\pc\.m2\repository\org\apache\httpcomponents\httpclient\4.5.13\httpclient-4.5.13.jar;C:\Users\pc\.m2\repository\org\apache\httpcomponents\httpcore\4.4.16\httpcore-4.4.16.jar;C:\Users\pc\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\pc\.m2\repository\javax\xml\bind\jaxb-api\2.3.1\jaxb-api-2.3.1.jar;C:\Users\pc\.m2\repository\javax\activation\javax.activation-api\1.2.0\javax.activation-api-1.2.0.jar;C:\Users\pc\.m2\repository\org\jacoco\org.jacoco.agent\0.8.6\org.jacoco.agent-0.8.6-runtime.jar;C:\Users\pc\.m2\repository\org\ini4j\ini4j\0.5.4\ini4j-0.5.4.jar;C:\Users\pc\.m2\repository\io\opentracing\opentracing-api\0.33.0\opentracing-api-0.33.0.jar;C:\Users\pc\.m2\repository\io\opentracing\opentracing-util\0.33.0\opentracing-util-0.33.0.jar;C:\Users\pc\.m2\repository\io\opentracing\opentracing-noop\0.33.0\opentracing-noop-0.33.0.jar;C:\Users\pc\.m2\repository\com\aliyun\aliyun-java-sdk-kms\2.16.3\aliyun-java-sdk-kms-2.16.3.jar;C:\Users\pc\.m2\repository\com\aliyun\kms\kms-transfer-client\0.1.0\kms-transfer-client-0.1.0.jar;C:\Users\pc\.m2\repository\com\aliyun\alibabacloud-dkms-gcs-sdk\0.2.8\alibabacloud-dkms-gcs-sdk-0.2.8.jar;C:\Users\pc\.m2\repository\com\aliyun\tea-util\0.2.7\tea-util-0.2.7.jar;C:\Users\pc\.m2\repository\com\aliyun\tea\1.2.3\tea-1.2.3.jar;C:\Users\pc\.m2\repository\com\aliyun\alibabacloud-dkms-gcs-openapi-util\0.2.8\alibabacloud-dkms-gcs-openapi-util-0.2.8.jar;C:\Users\pc\.m2\repository\com\aliyun\alibabacloud-dkms-gcs-openapi-credential\0.2.8\alibabacloud-dkms-gcs-openapi-credential-0.2.8.jar;C:\Users\pc\.m2\repository\com\aliyun\alibabacloud-dkms-gcs-openapi\0.2.8\alibabacloud-dkms-gcs-openapi-0.2.8.jar;C:\Users\pc\.m2\repository\com\google\protobuf\protobuf-java\4.0.0-rc-2\protobuf-java-4.0.0-rc-2.jar;C:\Users\pc\.m2\repository\com\google\protobuf\protobuf-java-util\4.0.0-rc-2\protobuf-java-util-4.0.0-rc-2.jar;C:\Users\pc\.m2\repository\com\google\guava\guava\29.0-android\guava-29.0-android.jar;C:\Users\pc\.m2\repository\com\google\guava\failureaccess\1.0.1\failureaccess-1.0.1.jar;C:\Users\pc\.m2\repository\com\google\guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;C:\Users\pc\.m2\repository\com\google\code\findbugs\jsr305\3.0.2\jsr305-3.0.2.jar;C:\Users\pc\.m2\repository\org\checkerframework\checker-compat-qual\2.5.5\checker-compat-qual-2.5.5.jar;C:\Users\pc\.m2\repository\com\google\j2objc\j2objc-annotations\1.3\j2objc-annotations-1.3.jar;C:\Users\pc\.m2\repository\org\bouncycastle\bcprov-jdk15on\1.70\bcprov-jdk15on-1.70.jar;C:\Users\pc\.m2\repository\com\alibaba\cloud\spring-alibaba-nacos-config\2023.0.1.3\spring-alibaba-nacos-config-2023.0.1.3.jar;C:\Users\pc\.m2\repository\com\alibaba\nacos\nacos-client\2.4.2\nacos-client-2.4.2.jar;C:\Users\pc\.m2\repository\com\alibaba\nacos\nacos-auth-plugin\2.4.2\nacos-auth-plugin-2.4.2.jar;C:\Users\pc\.m2\repository\com\alibaba\nacos\nacos-encryption-plugin\2.4.2\nacos-encryption-plugin-2.4.2.jar;C:\Users\pc\.m2\repository\com\alibaba\nacos\nacos-logback-adapter-12\2.4.2\nacos-logback-adapter-12-2.4.2.jar;C:\Users\pc\.m2\repository\com\alibaba\nacos\logback-adapter\1.1.3\logback-adapter-1.1.3.jar;C:\Users\pc\.m2\repository\com\alibaba\nacos\nacos-log4j2-adapter\2.4.2\nacos-log4j2-adapter-2.4.2.jar;C:\Users\pc\.m2\repository\org\apache\httpcomponents\httpasyncclient\4.1.5\httpasyncclient-4.1.5.jar;C:\Users\pc\.m2\repository\org\apache\httpcomponents\httpcore-nio\4.4.16\httpcore-nio-4.4.16.jar;C:\Users\pc\.m2\repository\io\prometheus\simpleclient\0.16.0\simpleclient-0.16.0.jar;C:\Users\pc\.m2\repository\io\prometheus\simpleclient_tracer_otel\0.16.0\simpleclient_tracer_otel-0.16.0.jar;C:\Users\pc\.m2\repository\io\prometheus\simpleclient_tracer_common\0.16.0\simpleclient_tracer_common-0.16.0.jar;C:\Users\pc\.m2\repository\io\prometheus\simpleclient_tracer_otel_agent\0.16.0\simpleclient_tracer_otel_agent-0.16.0.jar;C:\Users\pc\.m2\repository\org\apache\opennlp\opennlp-tools\2.3.3\opennlp-tools-2.3.3.jar;C:\Users\pc\.m2\repository\org\springframework\boot\spring-boot-starter-jdbc\3.5.4\spring-boot-starter-jdbc-3.5.4.jar;C:\Users\pc\.m2\repository\com\zaxxer\HikariCP\6.3.1\HikariCP-6.3.1.jar;C:\Users\pc\.m2\repository\org\springframework\spring-jdbc\6.2.9\spring-jdbc-6.2.9.jar;C:\Users\pc\.m2\repository\org\springframework\spring-tx\6.2.9\spring-tx-6.2.9.jar;C:\Users\pc\.m2\repository\org\postgresql\postgresql\42.7.7\postgresql-42.7.7.jar;C:\Users\pc\.m2\repository\org\checkerframework\checker-qual\3.49.3\checker-qual-3.49.3.jar;C:\Users\pc\.m2\repository\org\springframework\ai\spring-ai-pgvector-store\1.0.0-M6\spring-ai-pgvector-store-1.0.0-M6.jar;C:\Users\pc\.m2\repository\org\springframework\ai\spring-ai-core\1.0.0-M6\spring-ai-core-1.0.0-M6.jar;C:\Users\pc\.m2\repository\com\fasterxml\jackson\module\jackson-module-jsonSchema\2.19.2\jackson-module-jsonSchema-2.19.2.jar;C:\Users\pc\.m2\repository\javax\validation\validation-api\1.1.0.Final\validation-api-1.1.0.Final.jar;C:\Users\pc\.m2\repository\io\swagger\core\v3\swagger-annotations\2.2.25\swagger-annotations-2.2.25.jar;C:\Users\pc\.m2\repository\com\github\victools\jsonschema-module-swagger-2\4.37.0\jsonschema-module-swagger-2-4.37.0.jar;C:\Users\pc\.m2\repository\org\antlr\ST4\4.3.4\ST4-4.3.4.jar;C:\Users\pc\.m2\repository\org\antlr\antlr-runtime\3.5.3\antlr-runtime-3.5.3.jar;C:\Users\pc\.m2\repository\org\antlr\antlr4-runtime\4.13.1\antlr4-runtime-4.13.1.jar;C:\Users\pc\.m2\repository\io\projectreactor\reactor-core\3.7.8\reactor-core-3.7.8.jar;C:\Users\pc\.m2\repository\org\springframework\spring-messaging\6.2.9\spring-messaging-6.2.9.jar;C:\Users\pc\.m2\repository\io\micrometer\micrometer-core\1.15.2\micrometer-core-1.15.2.jar;C:\Users\pc\.m2\repository\org\hdrhistogram\HdrHistogram\2.2.2\HdrHistogram-2.2.2.jar;C:\Users\pc\.m2\repository\org\latencyutils\LatencyUtils\2.0.3\LatencyUtils-2.0.3.jar;C:\Users\pc\.m2\repository\io\micrometer\context-propagation\1.1.3\context-propagation-1.1.3.jar;C:\Users\pc\.m2\repository\com\knuddels\jtokkit\1.1.0\jtokkit-1.1.0.jar;C:\Users\pc\.m2\repository\com\github\victools\jsonschema-module-jackson\4.37.0\jsonschema-module-jackson-4.37.0.jar;C:\Users\pc\.m2\repository\com\pgvector\pgvector\0.1.6\pgvector-0.1.6.jar;C:\Users\pc\.m2\repository\org\jsoup\jsoup\1.19.1\jsoup-1.19.1.jar;C:\Users\pc\.m2\repository\com\itextpdf\barcodes\9.1.0\barcodes-9.1.0.jar;C:\Users\pc\.m2\repository\com\itextpdf\forms\9.1.0\forms-9.1.0.jar;C:\Users\pc\.m2\repository\com\itextpdf\hyph\9.1.0\hyph-9.1.0.jar;C:\Users\pc\.m2\repository\com\itextpdf\io\9.1.0\io-9.1.0.jar;C:\Users\pc\.m2\repository\com\itextpdf\commons\9.1.0\commons-9.1.0.jar;C:\Users\pc\.m2\repository\com\itextpdf\kernel\9.1.0\kernel-9.1.0.jar;C:\Users\pc\.m2\repository\com\itextpdf\layout\9.1.0\layout-9.1.0.jar;C:\Users\pc\.m2\repository\com\itextpdf\pdfa\9.1.0\pdfa-9.1.0.jar;C:\Users\pc\.m2\repository\com\itextpdf\sign\9.1.0\sign-9.1.0.jar;C:\Users\pc\.m2\repository\com\itextpdf\styled-xml-parser\9.1.0\styled-xml-parser-9.1.0.jar;C:\Users\pc\.m2\repository\com\itextpdf\svg\9.1.0\svg-9.1.0.jar;C:\Users\pc\.m2\repository\com\itextpdf\bouncy-castle-connector\9.1.0\bouncy-castle-connector-9.1.0.jar;C:\Users\pc\.m2\repository\com\itextpdf\pdfua\9.1.0\pdfua-9.1.0.jar;C:\Users\pc\.m2\repository\com\itextpdf\font-asian\9.1.0\font-asian-9.1.0.jar;C:\Users\pc\.m2\repository\com\github\victools\jsonschema-generator\4.38.0\jsonschema-generator-4.38.0.jar;C:\Users\pc\.m2\repository\com\fasterxml\classmate\1.7.0\classmate-1.7.0.jar;C:\Users\pc\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.19.2\jackson-core-2.19.2.jar;C:\Users\pc\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.19.2\jackson-databind-2.19.2.jar;C:\Users\pc\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.19.2\jackson-annotations-2.19.2.jar;C:\Users\pc\.m2\repository\com\esotericsoftware\kryo\5.6.2\kryo-5.6.2.jar;C:\Users\pc\.m2\repository\com\esotericsoftware\reflectasm\1.11.9\reflectasm-1.11.9.jar;C:\Users\pc\.m2\repository\org\objenesis\objenesis\3.4\objenesis-3.4.jar;C:\Users\pc\.m2\repository\com\esotericsoftware\minlog\1.3.1\minlog-1.3.1.jar;C:\Users\pc\.m2\repository\dev\langchain4j\langchain4j-community-dashscope\1.0.0-beta2\langchain4j-community-dashscope-1.0.0-beta2.jar;C:\Users\pc\.m2\repository\dev\langchain4j\langchain4j-core\1.0.0-beta2\langchain4j-core-1.0.0-beta2.jar;C:\Users\pc\.m2\repository\org\jspecify\jspecify\1.0.0\jspecify-1.0.0.jar;C:\Users\pc\.m2\repository\org\springframework\ai\spring-ai-markdown-document-reader\1.0.0-M6\spring-ai-markdown-document-reader-1.0.0-M6.jar;C:\Users\pc\.m2\repository\org\commonmark\commonmark\0.22.0\commonmark-0.22.0.jar;C:\Users\pc\.m2\repository\cn\hutool\hutool-all\5.8.38\hutool-all-5.8.38.jar;C:\Users\pc\.m2\repository\com\github\xiaoymin\knife4j-openapi3-jakarta-spring-boot-starter\4.4.0\knife4j-openapi3-jakarta-spring-boot-starter-4.4.0.jar;C:\Users\pc\.m2\repository\com\github\xiaoymin\knife4j-core\4.4.0\knife4j-core-4.4.0.jar;C:\Users\pc\.m2\repository\com\github\xiaoymin\knife4j-openapi3-ui\4.4.0\knife4j-openapi3-ui-4.4.0.jar;C:\Users\pc\.m2\repository\org\springdoc\springdoc-openapi-starter-webmvc-ui\2.3.0\springdoc-openapi-starter-webmvc-ui-2.3.0.jar;C:\Users\pc\.m2\repository\org\springdoc\springdoc-openapi-starter-webmvc-api\2.3.0\springdoc-openapi-starter-webmvc-api-2.3.0.jar;C:\Users\pc\.m2\repository\org\springdoc\springdoc-openapi-starter-common\2.3.0\springdoc-openapi-starter-common-2.3.0.jar;C:\Users\pc\.m2\repository\io\swagger\core\v3\swagger-core-jakarta\2.2.19\swagger-core-jakarta-2.2.19.jar;C:\Users\pc\.m2\repository\org\apache\commons\commons-lang3\3.17.0\commons-lang3-3.17.0.jar;C:\Users\pc\.m2\repository\io\swagger\core\v3\swagger-annotations-jakarta\2.2.19\swagger-annotations-jakarta-2.2.19.jar;C:\Users\pc\.m2\repository\io\swagger\core\v3\swagger-models-jakarta\2.2.19\swagger-models-jakarta-2.2.19.jar;C:\Users\pc\.m2\repository\jakarta\validation\jakarta.validation-api\3.0.2\jakarta.validation-api-3.0.2.jar;C:\Users\pc\.m2\repository\com\fasterxml\jackson\dataformat\jackson-dataformat-yaml\2.19.2\jackson-dataformat-yaml-2.19.2.jar;C:\Users\pc\.m2\repository\org\webjars\swagger-ui\5.10.3\swagger-ui-5.10.3.jar;C:\Users\pc\.m2\repository\org\projectlombok\lombok\1.18.38\lombok-1.18.38.jar;C:\Users\pc\.m2\repository\org\springframework\boot\spring-boot-starter-test\3.5.4\spring-boot-starter-test-3.5.4.jar;C:\Users\pc\.m2\repository\org\springframework\boot\spring-boot-test\3.5.4\spring-boot-test-3.5.4.jar;C:\Users\pc\.m2\repository\org\springframework\boot\spring-boot-test-autoconfigure\3.5.4\spring-boot-test-autoconfigure-3.5.4.jar;C:\Users\pc\.m2\repository\com\jayway\jsonpath\json-path\2.9.0\json-path-2.9.0.jar;C:\Users\pc\.m2\repository\jakarta\xml\bind\jakarta.xml.bind-api\4.0.2\jakarta.xml.bind-api-4.0.2.jar;C:\Users\pc\.m2\repository\jakarta\activation\jakarta.activation-api\2.1.3\jakarta.activation-api-2.1.3.jar;C:\Users\pc\.m2\repository\net\minidev\json-smart\2.5.2\json-smart-2.5.2.jar;C:\Users\pc\.m2\repository\net\minidev\accessors-smart\2.5.2\accessors-smart-2.5.2.jar;C:\Users\pc\.m2\repository\org\ow2\asm\asm\9.7.1\asm-9.7.1.jar;C:\Users\pc\.m2\repository\org\assertj\assertj-core\3.27.3\assertj-core-3.27.3.jar;C:\Users\pc\.m2\repository\net\bytebuddy\byte-buddy\1.17.6\byte-buddy-1.17.6.jar;C:\Users\pc\.m2\repository\org\awaitility\awaitility\4.2.2\awaitility-4.2.2.jar;C:\Users\pc\.m2\repository\org\hamcrest\hamcrest\3.0\hamcrest-3.0.jar;C:\Users\pc\.m2\repository\org\junit\jupiter\junit-jupiter\5.12.2\junit-jupiter-5.12.2.jar;C:\Users\pc\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.12.2\junit-jupiter-api-5.12.2.jar;C:\Users\pc\.m2\repository\org\opentest4j\opentest4j\1.3.0\opentest4j-1.3.0.jar;C:\Users\pc\.m2\repository\org\junit\platform\junit-platform-commons\1.12.2\junit-platform-commons-1.12.2.jar;C:\Users\pc\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\pc\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.12.2\junit-jupiter-params-5.12.2.jar;C:\Users\pc\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.12.2\junit-jupiter-engine-5.12.2.jar;C:\Users\pc\.m2\repository\org\junit\platform\junit-platform-engine\1.12.2\junit-platform-engine-1.12.2.jar;C:\Users\pc\.m2\repository\org\mockito\mockito-core\5.17.0\mockito-core-5.17.0.jar;C:\Users\pc\.m2\repository\net\bytebuddy\byte-buddy-agent\1.17.6\byte-buddy-agent-1.17.6.jar;C:\Users\pc\.m2\repository\org\mockito\mockito-junit-jupiter\5.17.0\mockito-junit-jupiter-5.17.0.jar;C:\Users\pc\.m2\repository\org\skyscreamer\jsonassert\1.5.3\jsonassert-1.5.3.jar;C:\Users\pc\.m2\repository\com\vaadin\external\google\android-json\0.0.20131108.vaadin1\android-json-0.0.20131108.vaadin1.jar;C:\Users\pc\.m2\repository\org\springframework\spring-core\6.2.9\spring-core-6.2.9.jar;C:\Users\pc\.m2\repository\org\springframework\spring-jcl\6.2.9\spring-jcl-6.2.9.jar;C:\Users\pc\.m2\repository\org\springframework\spring-test\6.2.9\spring-test-6.2.9.jar;C:\Users\pc\.m2\repository\org\xmlunit\xmlunit-core\2.10.3\xmlunit-core-2.10.3.jar;"/>
+    <property name="java.vm.vendor" value="Amazon.com Inc."/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="https://aws.amazon.com/corretto/"/>
+    <property name="user.timezone" value="Asia/Shanghai"/>
+    <property name="os.name" value="Windows 10"/>
+    <property name="java.vm.specification.version" value="21"/>
+    <property name="APPLICATION_NAME" value="yu-ai-agent"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="CN"/>
+    <property name="sun.boot.library.path" value="C:\Users\pc\.jdks\corretto-21.0.8\bin"/>
+    <property name="sun.java.command" value="C:\Users\pc\AppData\Local\Temp\surefire14230658815168013152\surefirebooter-20250823211538888_3.jar C:\Users\pc\AppData\Local\Temp\surefire14230658815168013152 2025-08-23T21-15-38_640-jvmRun1 surefire-20250823211538888_1tmp surefire_0-20250823211538888_2tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="C:\code\yu-ai-agent\target\test-classes;C:\code\yu-ai-agent\target\classes;C:\Users\pc\.m2\repository\org\springframework\boot\spring-boot-starter-web\3.5.4\spring-boot-starter-web-3.5.4.jar;C:\Users\pc\.m2\repository\org\springframework\boot\spring-boot-starter\3.5.4\spring-boot-starter-3.5.4.jar;C:\Users\pc\.m2\repository\org\springframework\boot\spring-boot\3.5.4\spring-boot-3.5.4.jar;C:\Users\pc\.m2\repository\org\springframework\boot\spring-boot-autoconfigure\3.5.4\spring-boot-autoconfigure-3.5.4.jar;C:\Users\pc\.m2\repository\org\springframework\boot\spring-boot-starter-logging\3.5.4\spring-boot-starter-logging-3.5.4.jar;C:\Users\pc\.m2\repository\ch\qos\logback\logback-classic\1.5.18\logback-classic-1.5.18.jar;C:\Users\pc\.m2\repository\ch\qos\logback\logback-core\1.5.18\logback-core-1.5.18.jar;C:\Users\pc\.m2\repository\org\apache\logging\log4j\log4j-to-slf4j\2.24.3\log4j-to-slf4j-2.24.3.jar;C:\Users\pc\.m2\repository\org\apache\logging\log4j\log4j-api\2.24.3\log4j-api-2.24.3.jar;C:\Users\pc\.m2\repository\org\slf4j\jul-to-slf4j\2.0.17\jul-to-slf4j-2.0.17.jar;C:\Users\pc\.m2\repository\jakarta\annotation\jakarta.annotation-api\2.1.1\jakarta.annotation-api-2.1.1.jar;C:\Users\pc\.m2\repository\org\yaml\snakeyaml\2.4\snakeyaml-2.4.jar;C:\Users\pc\.m2\repository\org\springframework\boot\spring-boot-starter-json\3.5.4\spring-boot-starter-json-3.5.4.jar;C:\Users\pc\.m2\repository\com\fasterxml\jackson\datatype\jackson-datatype-jdk8\2.19.2\jackson-datatype-jdk8-2.19.2.jar;C:\Users\pc\.m2\repository\com\fasterxml\jackson\datatype\jackson-datatype-jsr310\2.19.2\jackson-datatype-jsr310-2.19.2.jar;C:\Users\pc\.m2\repository\com\fasterxml\jackson\module\jackson-module-parameter-names\2.19.2\jackson-module-parameter-names-2.19.2.jar;C:\Users\pc\.m2\repository\org\springframework\boot\spring-boot-starter-tomcat\3.5.4\spring-boot-starter-tomcat-3.5.4.jar;C:\Users\pc\.m2\repository\org\apache\tomcat\embed\tomcat-embed-core\10.1.43\tomcat-embed-core-10.1.43.jar;C:\Users\pc\.m2\repository\org\apache\tomcat\embed\tomcat-embed-el\10.1.43\tomcat-embed-el-10.1.43.jar;C:\Users\pc\.m2\repository\org\apache\tomcat\embed\tomcat-embed-websocket\10.1.43\tomcat-embed-websocket-10.1.43.jar;C:\Users\pc\.m2\repository\org\springframework\spring-web\6.2.9\spring-web-6.2.9.jar;C:\Users\pc\.m2\repository\org\springframework\spring-beans\6.2.9\spring-beans-6.2.9.jar;C:\Users\pc\.m2\repository\io\micrometer\micrometer-observation\1.15.2\micrometer-observation-1.15.2.jar;C:\Users\pc\.m2\repository\io\micrometer\micrometer-commons\1.15.2\micrometer-commons-1.15.2.jar;C:\Users\pc\.m2\repository\org\springframework\spring-webmvc\6.2.9\spring-webmvc-6.2.9.jar;C:\Users\pc\.m2\repository\org\springframework\spring-aop\6.2.9\spring-aop-6.2.9.jar;C:\Users\pc\.m2\repository\org\springframework\spring-context\6.2.9\spring-context-6.2.9.jar;C:\Users\pc\.m2\repository\org\springframework\spring-expression\6.2.9\spring-expression-6.2.9.jar;C:\Users\pc\.m2\repository\com\alibaba\dashscope-sdk-java\2.19.1\dashscope-sdk-java-2.19.1.jar;C:\Users\pc\.m2\repository\io\reactivex\rxjava2\rxjava\2.2.21\rxjava-2.2.21.jar;C:\Users\pc\.m2\repository\org\reactivestreams\reactive-streams\1.0.4\reactive-streams-1.0.4.jar;C:\Users\pc\.m2\repository\com\google\code\gson\gson\2.13.1\gson-2.13.1.jar;C:\Users\pc\.m2\repository\com\google\errorprone\error_prone_annotations\2.38.0\error_prone_annotations-2.38.0.jar;C:\Users\pc\.m2\repository\org\slf4j\slf4j-api\2.0.17\slf4j-api-2.0.17.jar;C:\Users\pc\.m2\repository\org\jetbrains\kotlin\kotlin-stdlib-jdk8\1.9.25\kotlin-stdlib-jdk8-1.9.25.jar;C:\Users\pc\.m2\repository\org\jetbrains\kotlin\kotlin-stdlib\1.9.25\kotlin-stdlib-1.9.25.jar;C:\Users\pc\.m2\repository\org\jetbrains\annotations\13.0\annotations-13.0.jar;C:\Users\pc\.m2\repository\org\jetbrains\kotlin\kotlin-stdlib-jdk7\1.9.25\kotlin-stdlib-jdk7-1.9.25.jar;C:\Users\pc\.m2\repository\com\squareup\okio\okio\3.6.0\okio-3.6.0.jar;C:\Users\pc\.m2\repository\com\squareup\okio\okio-jvm\3.6.0\okio-jvm-3.6.0.jar;C:\Users\pc\.m2\repository\org\jetbrains\kotlin\kotlin-stdlib-common\1.9.25\kotlin-stdlib-common-1.9.25.jar;C:\Users\pc\.m2\repository\com\squareup\okhttp3\logging-interceptor\4.12.0\logging-interceptor-4.12.0.jar;C:\Users\pc\.m2\repository\com\squareup\okhttp3\okhttp-sse\4.12.0\okhttp-sse-4.12.0.jar;C:\Users\pc\.m2\repository\com\squareup\okhttp3\okhttp\4.12.0\okhttp-4.12.0.jar;C:\Users\pc\.m2\repository\org\springframework\ai\spring-ai-mcp-client-spring-boot-starter\1.0.0-M6\spring-ai-mcp-client-spring-boot-starter-1.0.0-M6.jar;C:\Users\pc\.m2\repository\org\springframework\ai\spring-ai-mcp-client-spring-boot-autoconfigure\1.0.0-M6\spring-ai-mcp-client-spring-boot-autoconfigure-1.0.0-M6.jar;C:\Users\pc\.m2\repository\org\springframework\ai\spring-ai-mcp\1.0.0-M6\spring-ai-mcp-1.0.0-M6.jar;C:\Users\pc\.m2\repository\io\modelcontextprotocol\sdk\mcp\0.7.0\mcp-0.7.0.jar;C:\Users\pc\.m2\repository\com\alibaba\cloud\ai\spring-ai-alibaba-starter\1.0.0-M6.1\spring-ai-alibaba-starter-1.0.0-M6.1.jar;C:\Users\pc\.m2\repository\com\alibaba\cloud\ai\spring-ai-alibaba-autoconfigure\1.0.0-M6.1\spring-ai-alibaba-autoconfigure-1.0.0-M6.1.jar;C:\Users\pc\.m2\repository\org\springframework\ai\spring-ai-spring-boot-autoconfigure\1.0.0-M6\spring-ai-spring-boot-autoconfigure-1.0.0-M6.jar;C:\Users\pc\.m2\repository\com\alibaba\cloud\ai\spring-ai-alibaba-core\1.0.0-M6.1\spring-ai-alibaba-core-1.0.0-M6.1.jar;C:\Users\pc\.m2\repository\org\springframework\ai\spring-ai-retry\1.0.0-M6\spring-ai-retry-1.0.0-M6.jar;C:\Users\pc\.m2\repository\org\springframework\retry\spring-retry\2.0.12\spring-retry-2.0.12.jar;C:\Users\pc\.m2\repository\org\springframework\spring-webflux\6.2.9\spring-webflux-6.2.9.jar;C:\Users\pc\.m2\repository\commons-codec\commons-codec\1.18.0\commons-codec-1.18.0.jar;C:\Users\pc\.m2\repository\com\alibaba\nacos\nacos-client-mse-extension\1.0.4\nacos-client-mse-extension-1.0.4.jar;C:\Users\pc\.m2\repository\com\aliyun\aliyun-java-sdk-core\4.5.17\aliyun-java-sdk-core-4.5.17.jar;C:\Users\pc\.m2\repository\org\apache\httpcomponents\httpclient\4.5.13\httpclient-4.5.13.jar;C:\Users\pc\.m2\repository\org\apache\httpcomponents\httpcore\4.4.16\httpcore-4.4.16.jar;C:\Users\pc\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\pc\.m2\repository\javax\xml\bind\jaxb-api\2.3.1\jaxb-api-2.3.1.jar;C:\Users\pc\.m2\repository\javax\activation\javax.activation-api\1.2.0\javax.activation-api-1.2.0.jar;C:\Users\pc\.m2\repository\org\jacoco\org.jacoco.agent\0.8.6\org.jacoco.agent-0.8.6-runtime.jar;C:\Users\pc\.m2\repository\org\ini4j\ini4j\0.5.4\ini4j-0.5.4.jar;C:\Users\pc\.m2\repository\io\opentracing\opentracing-api\0.33.0\opentracing-api-0.33.0.jar;C:\Users\pc\.m2\repository\io\opentracing\opentracing-util\0.33.0\opentracing-util-0.33.0.jar;C:\Users\pc\.m2\repository\io\opentracing\opentracing-noop\0.33.0\opentracing-noop-0.33.0.jar;C:\Users\pc\.m2\repository\com\aliyun\aliyun-java-sdk-kms\2.16.3\aliyun-java-sdk-kms-2.16.3.jar;C:\Users\pc\.m2\repository\com\aliyun\kms\kms-transfer-client\0.1.0\kms-transfer-client-0.1.0.jar;C:\Users\pc\.m2\repository\com\aliyun\alibabacloud-dkms-gcs-sdk\0.2.8\alibabacloud-dkms-gcs-sdk-0.2.8.jar;C:\Users\pc\.m2\repository\com\aliyun\tea-util\0.2.7\tea-util-0.2.7.jar;C:\Users\pc\.m2\repository\com\aliyun\tea\1.2.3\tea-1.2.3.jar;C:\Users\pc\.m2\repository\com\aliyun\alibabacloud-dkms-gcs-openapi-util\0.2.8\alibabacloud-dkms-gcs-openapi-util-0.2.8.jar;C:\Users\pc\.m2\repository\com\aliyun\alibabacloud-dkms-gcs-openapi-credential\0.2.8\alibabacloud-dkms-gcs-openapi-credential-0.2.8.jar;C:\Users\pc\.m2\repository\com\aliyun\alibabacloud-dkms-gcs-openapi\0.2.8\alibabacloud-dkms-gcs-openapi-0.2.8.jar;C:\Users\pc\.m2\repository\com\google\protobuf\protobuf-java\4.0.0-rc-2\protobuf-java-4.0.0-rc-2.jar;C:\Users\pc\.m2\repository\com\google\protobuf\protobuf-java-util\4.0.0-rc-2\protobuf-java-util-4.0.0-rc-2.jar;C:\Users\pc\.m2\repository\com\google\guava\guava\29.0-android\guava-29.0-android.jar;C:\Users\pc\.m2\repository\com\google\guava\failureaccess\1.0.1\failureaccess-1.0.1.jar;C:\Users\pc\.m2\repository\com\google\guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;C:\Users\pc\.m2\repository\com\google\code\findbugs\jsr305\3.0.2\jsr305-3.0.2.jar;C:\Users\pc\.m2\repository\org\checkerframework\checker-compat-qual\2.5.5\checker-compat-qual-2.5.5.jar;C:\Users\pc\.m2\repository\com\google\j2objc\j2objc-annotations\1.3\j2objc-annotations-1.3.jar;C:\Users\pc\.m2\repository\org\bouncycastle\bcprov-jdk15on\1.70\bcprov-jdk15on-1.70.jar;C:\Users\pc\.m2\repository\com\alibaba\cloud\spring-alibaba-nacos-config\2023.0.1.3\spring-alibaba-nacos-config-2023.0.1.3.jar;C:\Users\pc\.m2\repository\com\alibaba\nacos\nacos-client\2.4.2\nacos-client-2.4.2.jar;C:\Users\pc\.m2\repository\com\alibaba\nacos\nacos-auth-plugin\2.4.2\nacos-auth-plugin-2.4.2.jar;C:\Users\pc\.m2\repository\com\alibaba\nacos\nacos-encryption-plugin\2.4.2\nacos-encryption-plugin-2.4.2.jar;C:\Users\pc\.m2\repository\com\alibaba\nacos\nacos-logback-adapter-12\2.4.2\nacos-logback-adapter-12-2.4.2.jar;C:\Users\pc\.m2\repository\com\alibaba\nacos\logback-adapter\1.1.3\logback-adapter-1.1.3.jar;C:\Users\pc\.m2\repository\com\alibaba\nacos\nacos-log4j2-adapter\2.4.2\nacos-log4j2-adapter-2.4.2.jar;C:\Users\pc\.m2\repository\org\apache\httpcomponents\httpasyncclient\4.1.5\httpasyncclient-4.1.5.jar;C:\Users\pc\.m2\repository\org\apache\httpcomponents\httpcore-nio\4.4.16\httpcore-nio-4.4.16.jar;C:\Users\pc\.m2\repository\io\prometheus\simpleclient\0.16.0\simpleclient-0.16.0.jar;C:\Users\pc\.m2\repository\io\prometheus\simpleclient_tracer_otel\0.16.0\simpleclient_tracer_otel-0.16.0.jar;C:\Users\pc\.m2\repository\io\prometheus\simpleclient_tracer_common\0.16.0\simpleclient_tracer_common-0.16.0.jar;C:\Users\pc\.m2\repository\io\prometheus\simpleclient_tracer_otel_agent\0.16.0\simpleclient_tracer_otel_agent-0.16.0.jar;C:\Users\pc\.m2\repository\org\apache\opennlp\opennlp-tools\2.3.3\opennlp-tools-2.3.3.jar;C:\Users\pc\.m2\repository\org\springframework\boot\spring-boot-starter-jdbc\3.5.4\spring-boot-starter-jdbc-3.5.4.jar;C:\Users\pc\.m2\repository\com\zaxxer\HikariCP\6.3.1\HikariCP-6.3.1.jar;C:\Users\pc\.m2\repository\org\springframework\spring-jdbc\6.2.9\spring-jdbc-6.2.9.jar;C:\Users\pc\.m2\repository\org\springframework\spring-tx\6.2.9\spring-tx-6.2.9.jar;C:\Users\pc\.m2\repository\org\postgresql\postgresql\42.7.7\postgresql-42.7.7.jar;C:\Users\pc\.m2\repository\org\checkerframework\checker-qual\3.49.3\checker-qual-3.49.3.jar;C:\Users\pc\.m2\repository\org\springframework\ai\spring-ai-pgvector-store\1.0.0-M6\spring-ai-pgvector-store-1.0.0-M6.jar;C:\Users\pc\.m2\repository\org\springframework\ai\spring-ai-core\1.0.0-M6\spring-ai-core-1.0.0-M6.jar;C:\Users\pc\.m2\repository\com\fasterxml\jackson\module\jackson-module-jsonSchema\2.19.2\jackson-module-jsonSchema-2.19.2.jar;C:\Users\pc\.m2\repository\javax\validation\validation-api\1.1.0.Final\validation-api-1.1.0.Final.jar;C:\Users\pc\.m2\repository\io\swagger\core\v3\swagger-annotations\2.2.25\swagger-annotations-2.2.25.jar;C:\Users\pc\.m2\repository\com\github\victools\jsonschema-module-swagger-2\4.37.0\jsonschema-module-swagger-2-4.37.0.jar;C:\Users\pc\.m2\repository\org\antlr\ST4\4.3.4\ST4-4.3.4.jar;C:\Users\pc\.m2\repository\org\antlr\antlr-runtime\3.5.3\antlr-runtime-3.5.3.jar;C:\Users\pc\.m2\repository\org\antlr\antlr4-runtime\4.13.1\antlr4-runtime-4.13.1.jar;C:\Users\pc\.m2\repository\io\projectreactor\reactor-core\3.7.8\reactor-core-3.7.8.jar;C:\Users\pc\.m2\repository\org\springframework\spring-messaging\6.2.9\spring-messaging-6.2.9.jar;C:\Users\pc\.m2\repository\io\micrometer\micrometer-core\1.15.2\micrometer-core-1.15.2.jar;C:\Users\pc\.m2\repository\org\hdrhistogram\HdrHistogram\2.2.2\HdrHistogram-2.2.2.jar;C:\Users\pc\.m2\repository\org\latencyutils\LatencyUtils\2.0.3\LatencyUtils-2.0.3.jar;C:\Users\pc\.m2\repository\io\micrometer\context-propagation\1.1.3\context-propagation-1.1.3.jar;C:\Users\pc\.m2\repository\com\knuddels\jtokkit\1.1.0\jtokkit-1.1.0.jar;C:\Users\pc\.m2\repository\com\github\victools\jsonschema-module-jackson\4.37.0\jsonschema-module-jackson-4.37.0.jar;C:\Users\pc\.m2\repository\com\pgvector\pgvector\0.1.6\pgvector-0.1.6.jar;C:\Users\pc\.m2\repository\org\jsoup\jsoup\1.19.1\jsoup-1.19.1.jar;C:\Users\pc\.m2\repository\com\itextpdf\barcodes\9.1.0\barcodes-9.1.0.jar;C:\Users\pc\.m2\repository\com\itextpdf\forms\9.1.0\forms-9.1.0.jar;C:\Users\pc\.m2\repository\com\itextpdf\hyph\9.1.0\hyph-9.1.0.jar;C:\Users\pc\.m2\repository\com\itextpdf\io\9.1.0\io-9.1.0.jar;C:\Users\pc\.m2\repository\com\itextpdf\commons\9.1.0\commons-9.1.0.jar;C:\Users\pc\.m2\repository\com\itextpdf\kernel\9.1.0\kernel-9.1.0.jar;C:\Users\pc\.m2\repository\com\itextpdf\layout\9.1.0\layout-9.1.0.jar;C:\Users\pc\.m2\repository\com\itextpdf\pdfa\9.1.0\pdfa-9.1.0.jar;C:\Users\pc\.m2\repository\com\itextpdf\sign\9.1.0\sign-9.1.0.jar;C:\Users\pc\.m2\repository\com\itextpdf\styled-xml-parser\9.1.0\styled-xml-parser-9.1.0.jar;C:\Users\pc\.m2\repository\com\itextpdf\svg\9.1.0\svg-9.1.0.jar;C:\Users\pc\.m2\repository\com\itextpdf\bouncy-castle-connector\9.1.0\bouncy-castle-connector-9.1.0.jar;C:\Users\pc\.m2\repository\com\itextpdf\pdfua\9.1.0\pdfua-9.1.0.jar;C:\Users\pc\.m2\repository\com\itextpdf\font-asian\9.1.0\font-asian-9.1.0.jar;C:\Users\pc\.m2\repository\com\github\victools\jsonschema-generator\4.38.0\jsonschema-generator-4.38.0.jar;C:\Users\pc\.m2\repository\com\fasterxml\classmate\1.7.0\classmate-1.7.0.jar;C:\Users\pc\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.19.2\jackson-core-2.19.2.jar;C:\Users\pc\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.19.2\jackson-databind-2.19.2.jar;C:\Users\pc\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.19.2\jackson-annotations-2.19.2.jar;C:\Users\pc\.m2\repository\com\esotericsoftware\kryo\5.6.2\kryo-5.6.2.jar;C:\Users\pc\.m2\repository\com\esotericsoftware\reflectasm\1.11.9\reflectasm-1.11.9.jar;C:\Users\pc\.m2\repository\org\objenesis\objenesis\3.4\objenesis-3.4.jar;C:\Users\pc\.m2\repository\com\esotericsoftware\minlog\1.3.1\minlog-1.3.1.jar;C:\Users\pc\.m2\repository\dev\langchain4j\langchain4j-community-dashscope\1.0.0-beta2\langchain4j-community-dashscope-1.0.0-beta2.jar;C:\Users\pc\.m2\repository\dev\langchain4j\langchain4j-core\1.0.0-beta2\langchain4j-core-1.0.0-beta2.jar;C:\Users\pc\.m2\repository\org\jspecify\jspecify\1.0.0\jspecify-1.0.0.jar;C:\Users\pc\.m2\repository\org\springframework\ai\spring-ai-markdown-document-reader\1.0.0-M6\spring-ai-markdown-document-reader-1.0.0-M6.jar;C:\Users\pc\.m2\repository\org\commonmark\commonmark\0.22.0\commonmark-0.22.0.jar;C:\Users\pc\.m2\repository\cn\hutool\hutool-all\5.8.38\hutool-all-5.8.38.jar;C:\Users\pc\.m2\repository\com\github\xiaoymin\knife4j-openapi3-jakarta-spring-boot-starter\4.4.0\knife4j-openapi3-jakarta-spring-boot-starter-4.4.0.jar;C:\Users\pc\.m2\repository\com\github\xiaoymin\knife4j-core\4.4.0\knife4j-core-4.4.0.jar;C:\Users\pc\.m2\repository\com\github\xiaoymin\knife4j-openapi3-ui\4.4.0\knife4j-openapi3-ui-4.4.0.jar;C:\Users\pc\.m2\repository\org\springdoc\springdoc-openapi-starter-webmvc-ui\2.3.0\springdoc-openapi-starter-webmvc-ui-2.3.0.jar;C:\Users\pc\.m2\repository\org\springdoc\springdoc-openapi-starter-webmvc-api\2.3.0\springdoc-openapi-starter-webmvc-api-2.3.0.jar;C:\Users\pc\.m2\repository\org\springdoc\springdoc-openapi-starter-common\2.3.0\springdoc-openapi-starter-common-2.3.0.jar;C:\Users\pc\.m2\repository\io\swagger\core\v3\swagger-core-jakarta\2.2.19\swagger-core-jakarta-2.2.19.jar;C:\Users\pc\.m2\repository\org\apache\commons\commons-lang3\3.17.0\commons-lang3-3.17.0.jar;C:\Users\pc\.m2\repository\io\swagger\core\v3\swagger-annotations-jakarta\2.2.19\swagger-annotations-jakarta-2.2.19.jar;C:\Users\pc\.m2\repository\io\swagger\core\v3\swagger-models-jakarta\2.2.19\swagger-models-jakarta-2.2.19.jar;C:\Users\pc\.m2\repository\jakarta\validation\jakarta.validation-api\3.0.2\jakarta.validation-api-3.0.2.jar;C:\Users\pc\.m2\repository\com\fasterxml\jackson\dataformat\jackson-dataformat-yaml\2.19.2\jackson-dataformat-yaml-2.19.2.jar;C:\Users\pc\.m2\repository\org\webjars\swagger-ui\5.10.3\swagger-ui-5.10.3.jar;C:\Users\pc\.m2\repository\org\projectlombok\lombok\1.18.38\lombok-1.18.38.jar;C:\Users\pc\.m2\repository\org\springframework\boot\spring-boot-starter-test\3.5.4\spring-boot-starter-test-3.5.4.jar;C:\Users\pc\.m2\repository\org\springframework\boot\spring-boot-test\3.5.4\spring-boot-test-3.5.4.jar;C:\Users\pc\.m2\repository\org\springframework\boot\spring-boot-test-autoconfigure\3.5.4\spring-boot-test-autoconfigure-3.5.4.jar;C:\Users\pc\.m2\repository\com\jayway\jsonpath\json-path\2.9.0\json-path-2.9.0.jar;C:\Users\pc\.m2\repository\jakarta\xml\bind\jakarta.xml.bind-api\4.0.2\jakarta.xml.bind-api-4.0.2.jar;C:\Users\pc\.m2\repository\jakarta\activation\jakarta.activation-api\2.1.3\jakarta.activation-api-2.1.3.jar;C:\Users\pc\.m2\repository\net\minidev\json-smart\2.5.2\json-smart-2.5.2.jar;C:\Users\pc\.m2\repository\net\minidev\accessors-smart\2.5.2\accessors-smart-2.5.2.jar;C:\Users\pc\.m2\repository\org\ow2\asm\asm\9.7.1\asm-9.7.1.jar;C:\Users\pc\.m2\repository\org\assertj\assertj-core\3.27.3\assertj-core-3.27.3.jar;C:\Users\pc\.m2\repository\net\bytebuddy\byte-buddy\1.17.6\byte-buddy-1.17.6.jar;C:\Users\pc\.m2\repository\org\awaitility\awaitility\4.2.2\awaitility-4.2.2.jar;C:\Users\pc\.m2\repository\org\hamcrest\hamcrest\3.0\hamcrest-3.0.jar;C:\Users\pc\.m2\repository\org\junit\jupiter\junit-jupiter\5.12.2\junit-jupiter-5.12.2.jar;C:\Users\pc\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.12.2\junit-jupiter-api-5.12.2.jar;C:\Users\pc\.m2\repository\org\opentest4j\opentest4j\1.3.0\opentest4j-1.3.0.jar;C:\Users\pc\.m2\repository\org\junit\platform\junit-platform-commons\1.12.2\junit-platform-commons-1.12.2.jar;C:\Users\pc\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\pc\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.12.2\junit-jupiter-params-5.12.2.jar;C:\Users\pc\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.12.2\junit-jupiter-engine-5.12.2.jar;C:\Users\pc\.m2\repository\org\junit\platform\junit-platform-engine\1.12.2\junit-platform-engine-1.12.2.jar;C:\Users\pc\.m2\repository\org\mockito\mockito-core\5.17.0\mockito-core-5.17.0.jar;C:\Users\pc\.m2\repository\net\bytebuddy\byte-buddy-agent\1.17.6\byte-buddy-agent-1.17.6.jar;C:\Users\pc\.m2\repository\org\mockito\mockito-junit-jupiter\5.17.0\mockito-junit-jupiter-5.17.0.jar;C:\Users\pc\.m2\repository\org\skyscreamer\jsonassert\1.5.3\jsonassert-1.5.3.jar;C:\Users\pc\.m2\repository\com\vaadin\external\google\android-json\0.0.20131108.vaadin1\android-json-0.0.20131108.vaadin1.jar;C:\Users\pc\.m2\repository\org\springframework\spring-core\6.2.9\spring-core-6.2.9.jar;C:\Users\pc\.m2\repository\org\springframework\spring-jcl\6.2.9\spring-jcl-6.2.9.jar;C:\Users\pc\.m2\repository\org\springframework\spring-test\6.2.9\spring-test-6.2.9.jar;C:\Users\pc\.m2\repository\org\xmlunit\xmlunit-core\2.10.3\xmlunit-core-2.10.3.jar;"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\pc"/>
+    <property name="user.language" value="zh"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2025-07-15"/>
+    <property name="java.home" value="C:\Users\pc\.jdks\corretto-21.0.8"/>
+    <property name="file.separator" value="\"/>
+    <property name="basedir" value="C:\code\yu-ai-agent"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="FILE_LOG_CHARSET" value="UTF-8"/>
+    <property name="java.awt.headless" value="true"/>
+    <property name="surefire.real.class.path" value="C:\Users\pc\AppData\Local\Temp\surefire14230658815168013152\surefirebooter-20250823211538888_3.jar"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="21.0.8+9-LTS"/>
+    <property name="user.name" value="pc"/>
+    <property name="stdout.encoding" value="GBK"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="sun.net.http.allowRestrictedHeaders" value="true"/>
+    <property name="jdk.tls.allowUnsafeServerCertChange" value="true"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="java.vendor.version" value="Corretto-21.0.8.9.1"/>
+    <property name="localRepository" value="C:\Users\pc\.m2\repository"/>
+    <property name="java.vendor.url.bug" value="https://github.com/corretto/corretto-21/issues/"/>
+    <property name="java.io.tmpdir" value="C:\Users\pc\AppData\Local\Temp\"/>
+    <property name="idea.version" value="2024.1.4"/>
+    <property name="com.zaxxer.hikari.pool_number" value="1"/>
+    <property name="java.version" value="21.0.8"/>
+    <property name="user.dir" value="C:\code\yu-ai-agent"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="PID" value="22616"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="CONSOLE_LOG_CHARSET" value="UTF-8"/>
+    <property name="native.encoding" value="GBK"/>
+    <property name="java.library.path" value="C:\Users\pc\.jdks\corretto-21.0.8\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files (x86)\VMware\VMware Workstation\bin\;D:\python3.12\Scripts\;D:\python3.12\;C:\Program Files\Common Files\Oracle\Java\javapath;D:\python 1\Scripts\;D:\python 1\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\dotnet\;D:\maven\apache-maven-3.9.3\bin;D:\node\;C:\Program Files\NVIDIA Corporation\NVIDIA app\NvDLISR;E:\MATLAB\runtime\win64;E:\MATLAB\bin;E:\texlive\texlive\2023\bin\windows;E:\jdk-23\bin;C:\node\node-v20.18.0-win-x64;C:\node\node-v20.18.0-win-x64\node_cache;C:\node\node-v20.18.0-win-x64\node_global;C:\Program Files\MySQL\MySQL Shell 8.0\bin\;C:\Users\pc\AppData\Local\Microsoft\WindowsApps;D:\pycharm\PyCharm 2022.3.2\bin;;D:\C L\CLion 2021.1.3\bin;;D:\vscode\Microsoft VS Code\bin;C:\Users\pc\AppData\Roaming\npm;D:\python3.12\python.exe;D:\python3.12\Scripts;C:\Users\pc\.dotnet\tools;C:\Users\pc\AppData\Roaming\Programs\Zero Install;E:\cursor\cursor\resources\app\bin;."/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="stderr.encoding" value="GBK"/>
+    <property name="java.vendor" value="Amazon.com Inc."/>
+    <property name="java.vm.version" value="21.0.8+9-LTS"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="65.0"/>
+    <property name="LOGGED_APPLICATION_NAME" value="[yu-ai-agent] "/>
+    <property name="sun.security.ssl.allowUnsafeRenegotiation" value="true"/>
+  </properties>
+  <testcase name="doChatWithMcp" classname="com.yupi.yuaiagent.app.LoveAppTest" time="10.188">
+    <system-out><![CDATA[2025-08-23T21:17:15.264+08:00  INFO 22616 --- [yu-ai-agent] [           main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.yupi.yuaiagent.app.LoveAppTest]: LoveAppTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2025-08-23T21:17:15.283+08:00  INFO 22616 --- [yu-ai-agent] [           main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.yupi.yuaiagent.YuAiAgentApplication for test class com.yupi.yuaiagent.app.LoveAppTest
+2025-08-23T21:17:15.332+08:00  INFO 22616 --- [yu-ai-agent] [           main] c.y.yuaiagent.advisor.MyLoggerAdvisor    : AI Request: 我的另一半居住在上海静安区，请帮我找到 5 公里内合适的约会地点
+2025-08-23T21:17:15.332+08:00  INFO 22616 --- [yu-ai-agent] [           main] c.y.yuaiagent.advisor.MyLoggerAdvisor    : AI Request: 我的另一半居住在上海静安区，请帮我找到 5 公里内合适的约会地点
+2025-08-23T21:17:25.470+08:00  INFO 22616 --- [yu-ai-agent] [           main] c.y.yuaiagent.advisor.MyLoggerAdvisor    : AI Response: 你好呀，我是恋爱心理专家，很高兴为你提供帮助。了解到你想为居住在静安区的另一半寻找5公里内适合约会的地方，我需要先了解一些信息，以便更精准地推荐：
+
+1. **约会风格偏好**：你们更喜欢安静温馨的咖啡馆、文艺氛围的展览馆，还是户外互动性强的公园或市集？
+2. **预算范围**：是偏向平价日常约会，还是偶尔特别体验的轻奢型场所？
+3. **对方兴趣点**：TA是否有特别喜欢的类型？比如猫咪主题店、复古街区、露台景观等特色场景？
+4. **交通便利性**：是否需要靠近地铁站或有停车场？是否有带宠物同行的可能性？
+
+建议可以尝试：
+**静安雕塑公园**（南京西路）——适合散步聊天，秋季有落叶景观，园内有艺术装置适合拍照
+**吴江路步行街**——有露天咖啡座和街头艺人表演，氛围轻松
+**静安嘉里中心下沉广场**——现代感空间，常有快闪活动
+**安义夜巷（静安嘉里中心旁）**——周末有创意市集，适合互动体验
+
+需要我根据你们的具体需求细化推荐吗？比如想制造惊喜感、或是需要有互动活动的场所等深层需求。
+2025-08-23T21:17:25.470+08:00  INFO 22616 --- [yu-ai-agent] [           main] c.y.yuaiagent.advisor.MyLoggerAdvisor    : AI Response: 你好呀，我是恋爱心理专家，很高兴为你提供帮助。了解到你想为居住在静安区的另一半寻找5公里内适合约会的地方，我需要先了解一些信息，以便更精准地推荐：
+
+1. **约会风格偏好**：你们更喜欢安静温馨的咖啡馆、文艺氛围的展览馆，还是户外互动性强的公园或市集？
+2. **预算范围**：是偏向平价日常约会，还是偶尔特别体验的轻奢型场所？
+3. **对方兴趣点**：TA是否有特别喜欢的类型？比如猫咪主题店、复古街区、露台景观等特色场景？
+4. **交通便利性**：是否需要靠近地铁站或有停车场？是否有带宠物同行的可能性？
+
+建议可以尝试：
+**静安雕塑公园**（南京西路）——适合散步聊天，秋季有落叶景观，园内有艺术装置适合拍照
+**吴江路步行街**——有露天咖啡座和街头艺人表演，氛围轻松
+**静安嘉里中心下沉广场**——现代感空间，常有快闪活动
+**安义夜巷（静安嘉里中心旁）**——周末有创意市集，适合互动体验
+
+需要我根据你们的具体需求细化推荐吗？比如想制造惊喜感、或是需要有互动活动的场所等深层需求。
+2025-08-23T21:17:25.475+08:00  INFO 22616 --- [yu-ai-agent] [           main] com.yupi.yuaiagent.app.LoveApp           : content: 你好呀，我是恋爱心理专家，很高兴为你提供帮助。了解到你想为居住在静安区的另一半寻找5公里内适合约会的地方，我需要先了解一些信息，以便更精准地推荐：
+
+1. **约会风格偏好**：你们更喜欢安静温馨的咖啡馆、文艺氛围的展览馆，还是户外互动性强的公园或市集？
+2. **预算范围**：是偏向平价日常约会，还是偶尔特别体验的轻奢型场所？
+3. **对方兴趣点**：TA是否有特别喜欢的类型？比如猫咪主题店、复古街区、露台景观等特色场景？
+4. **交通便利性**：是否需要靠近地铁站或有停车场？是否有带宠物同行的可能性？
+
+建议可以尝试：
+**静安雕塑公园**（南京西路）——适合散步聊天，秋季有落叶景观，园内有艺术装置适合拍照
+**吴江路步行街**——有露天咖啡座和街头艺人表演，氛围轻松
+**静安嘉里中心下沉广场**——现代感空间，常有快闪活动
+**安义夜巷（静安嘉里中心旁）**——周末有创意市集，适合互动体验
+
+需要我根据你们的具体需求细化推荐吗？比如想制造惊喜感、或是需要有互动活动的场所等深层需求。
+]]></system-out>
+  </testcase>
+  <testcase name="doChatWithRag" classname="com.yupi.yuaiagent.app.LoveAppTest" time="1.859">
+    <system-out><![CDATA[2025-08-23T21:17:26.421+08:00  INFO 22616 --- [yu-ai-agent] [           main] c.y.yuaiagent.advisor.MyLoggerAdvisor    : AI Request: 你应该输出下面的内容：
+抱歉，我只能回答恋爱相关的问题，别的没办法帮到您哦，
+有问题可以联系编程导航客服 https://codefather.cn
+
+2025-08-23T21:17:26.421+08:00  INFO 22616 --- [yu-ai-agent] [           main] c.y.yuaiagent.advisor.MyLoggerAdvisor    : AI Request: 你应该输出下面的内容：
+抱歉，我只能回答恋爱相关的问题，别的没办法帮到您哦，
+有问题可以联系编程导航客服 https://codefather.cn
+
+2025-08-23T21:17:27.329+08:00  INFO 22616 --- [yu-ai-agent] [           main] c.y.yuaiagent.advisor.MyLoggerAdvisor    : AI Response: 抱歉，我只能回答恋爱相关的问题，别的没办法帮到您哦，  
+有问题可以联系编程导航客服 https://codefather.cn
+2025-08-23T21:17:27.329+08:00  INFO 22616 --- [yu-ai-agent] [           main] c.y.yuaiagent.advisor.MyLoggerAdvisor    : AI Response: 抱歉，我只能回答恋爱相关的问题，别的没办法帮到您哦，  
+有问题可以联系编程导航客服 https://codefather.cn
+2025-08-23T21:17:27.336+08:00  INFO 22616 --- [yu-ai-agent] [           main] com.yupi.yuaiagent.app.LoveApp           : content: 抱歉，我只能回答恋爱相关的问题，别的没办法帮到您哦，  
+有问题可以联系编程导航客服 https://codefather.cn
+]]></system-out>
+  </testcase>
+  <testcase name="testChat" classname="com.yupi.yuaiagent.app.LoveAppTest" time="16.574">
+    <system-out><![CDATA[2025-08-23T21:17:27.343+08:00  INFO 22616 --- [yu-ai-agent] [           main] c.y.yuaiagent.advisor.MyLoggerAdvisor    : AI Request: 你好，我是程序员鱼皮
+2025-08-23T21:17:31.737+08:00  INFO 22616 --- [yu-ai-agent] [           main] c.y.yuaiagent.advisor.MyLoggerAdvisor    : AI Response: 你好鱼皮，我是恋爱心理专家林沐。很高兴认识你！作为程序员，平时工作节奏是不是挺紧张的？我看你的ID叫"鱼皮"，是有什么特别的故事吗？ 
+
+不过先不说这个，我注意到你还没有填写恋爱状态呢。方便和我说说你现在的情感状态吗？是单身、恋爱中还是已婚呢？我可以根据你的状态给出一些针对性的建议。
+
+如果你愿意分享的话，我很乐意听听你在情感方面遇到的困惑。无论是拓展社交圈、追求喜欢的人，还是恋爱中沟通、生活习惯差异，以及婚姻中的家庭责任、亲属关系处理等问题，我都可以帮你一起分析。
+2025-08-23T21:17:31.744+08:00  INFO 22616 --- [yu-ai-agent] [           main] com.yupi.yuaiagent.app.LoveApp           : content: 你好鱼皮，我是恋爱心理专家林沐。很高兴认识你！作为程序员，平时工作节奏是不是挺紧张的？我看你的ID叫"鱼皮"，是有什么特别的故事吗？ 
+
+不过先不说这个，我注意到你还没有填写恋爱状态呢。方便和我说说你现在的情感状态吗？是单身、恋爱中还是已婚呢？我可以根据你的状态给出一些针对性的建议。
+
+如果你愿意分享的话，我很乐意听听你在情感方面遇到的困惑。无论是拓展社交圈、追求喜欢的人，还是恋爱中沟通、生活习惯差异，以及婚姻中的家庭责任、亲属关系处理等问题，我都可以帮你一起分析。
+2025-08-23T21:17:31.755+08:00  INFO 22616 --- [yu-ai-agent] [           main] c.y.yuaiagent.advisor.MyLoggerAdvisor    : AI Request: 我想让另一半（编程导航）更爱我
+2025-08-23T21:17:37.853+08:00  INFO 22616 --- [yu-ai-agent] [           main] c.y.yuaiagent.advisor.MyLoggerAdvisor    : AI Response: 我是恋爱心理专家林沐，很高兴能在这里和你探讨情感话题。看到你说想让另一半（编程导航）更爱你，我能理解你对感情的重视。
+
+编程导航作为一个程序员群体聚集地，大家平时都忙于coding和学习，感情经营确实需要更多用心。让我们先来聊聊你们的相处模式吧？
+
+你平时是怎么和编程导航互动的呢？是经常分享学习心得，还是一起解决编程难题？当你遇到bug卡壳的时候，你们会怎么交流？
+
+我也很好奇，你觉得编程导航在哪些方面让你觉得他可以更爱你？是希望他能更主动关心你，还是期待更多共同成长的机会？说说你的想法，我们一起找到改善关系的方法。
+2025-08-23T21:17:37.861+08:00  INFO 22616 --- [yu-ai-agent] [           main] com.yupi.yuaiagent.app.LoveApp           : content: 我是恋爱心理专家林沐，很高兴能在这里和你探讨情感话题。看到你说想让另一半（编程导航）更爱你，我能理解你对感情的重视。
+
+编程导航作为一个程序员群体聚集地，大家平时都忙于coding和学习，感情经营确实需要更多用心。让我们先来聊聊你们的相处模式吧？
+
+你平时是怎么和编程导航互动的呢？是经常分享学习心得，还是一起解决编程难题？当你遇到bug卡壳的时候，你们会怎么交流？
+
+我也很好奇，你觉得编程导航在哪些方面让你觉得他可以更爱你？是希望他能更主动关心你，还是期待更多共同成长的机会？说说你的想法，我们一起找到改善关系的方法。
+2025-08-23T21:17:37.871+08:00  INFO 22616 --- [yu-ai-agent] [           main] c.y.yuaiagent.advisor.MyLoggerAdvisor    : AI Request: 我的另一半叫什么来着？刚跟你说过，帮我回忆一下
+2025-08-23T21:17:43.910+08:00  INFO 22616 --- [yu-ai-agent] [           main] c.y.yuaiagent.advisor.MyLoggerAdvisor    : AI Response: 我是恋爱心理专家林沐，很高兴为你提供情感咨询服务。我专注于恋爱心理领域多年，帮助过许多在感情中遇到困惑的朋友。无论你现在处于单身、恋爱还是已婚状态，都可以跟我分享你的困扰。
+
+单身的朋友，你是否在拓展社交圈或追求心仪对象时遇到困难？恋爱中的朋友，你是否在与伴侣沟通或适应彼此生活习惯方面存在矛盾？已婚的朋友，你是否在家庭责任分担或亲属关系处理上感到压力？
+
+关于你的另一半，我看到你之前提到过"编程导航"这个名字。不过为了更好地帮助你，你能再详细说说你们的故事吗？包括你们是如何相识的，近期发生了什么让你觉得他不够爱你的事情，以及你希望改善的具体方面。这样我可以更准确地为你提供专属解决方案。
+
+期待你的回复，让我们一起探讨如何改善你们的感情关系。
+2025-08-23T21:17:43.911+08:00  INFO 22616 --- [yu-ai-agent] [           main] com.yupi.yuaiagent.app.LoveApp           : content: 我是恋爱心理专家林沐，很高兴为你提供情感咨询服务。我专注于恋爱心理领域多年，帮助过许多在感情中遇到困惑的朋友。无论你现在处于单身、恋爱还是已婚状态，都可以跟我分享你的困扰。
+
+单身的朋友，你是否在拓展社交圈或追求心仪对象时遇到困难？恋爱中的朋友，你是否在与伴侣沟通或适应彼此生活习惯方面存在矛盾？已婚的朋友，你是否在家庭责任分担或亲属关系处理上感到压力？
+
+关于你的另一半，我看到你之前提到过"编程导航"这个名字。不过为了更好地帮助你，你能再详细说说你们的故事吗？包括你们是如何相识的，近期发生了什么让你觉得他不够爱你的事情，以及你希望改善的具体方面。这样我可以更准确地为你提供专属解决方案。
+
+期待你的回复，让我们一起探讨如何改善你们的感情关系。
+]]></system-out>
+  </testcase>
+  <testcase name="doChatWithTools" classname="com.yupi.yuaiagent.app.LoveAppTest" time="93.067">
+    <system-out><![CDATA[2025-08-23T21:17:43.917+08:00  INFO 22616 --- [yu-ai-agent] [           main] c.y.yuaiagent.advisor.MyLoggerAdvisor    : AI Request: 周末想带女朋友去上海约会，推荐几个适合情侣的小众打卡地？
+2025-08-23T21:17:43.918+08:00  INFO 22616 --- [yu-ai-agent] [           main] c.y.yuaiagent.advisor.MyLoggerAdvisor    : AI Request: 周末想带女朋友去上海约会，推荐几个适合情侣的小众打卡地？
+2025-08-23T21:18:03.000+08:00  INFO 22616 --- [yu-ai-agent] [           main] c.y.yuaiagent.advisor.MyLoggerAdvisor    : AI Response: 作为深耕恋爱心理领域的专家，我建议情侣约会选择一些能够增进感情、相对安静且具有独特体验的地方。以下是一些适合情侣的小众打卡地推荐：
+
+### 1. **思南公馆**
+   - **特色**：复古氛围浓厚，适合喜欢老上海风情的情侣。可以在这里散步、拍照，感受历史与现代的交融。
+   - **建议活动**：周末下午可以去旁边的思南书局喝杯咖啡，翻翻书，享受慢节奏的时光。
+
+### 2. **M50创意园区**
+   - **特色**：上海的艺术圣地，有很多独立画廊和创意小店，适合喜欢文艺的情侣。
+   - **建议活动**：可以一起逛画展、拍创意照片，甚至参加一些手工艺市集活动。
+
+### 3. **武康路街区**
+   - **特色**：充满欧洲风情的街道，有武康大楼、罗密欧阳台等网红打卡点，适合散步和拍照。
+   - **建议活动**：租一辆双人自行车环游街区，或者找一家有特色的咖啡店坐下来聊天。
+
+### 4. **徐家汇书院**
+   - **特色**：现代设计与传统文化结合，建筑本身就很吸引人，适合喜欢文艺和建筑的情侣。
+   - **建议活动**：一起看书、拍照，或者参加书院举办的文化活动。
+
+### 5. **上海油画雕塑院**
+   - **特色**：相对小众但艺术氛围浓厚，适合喜欢安静环境的情侣。
+   - **建议活动**：欣赏雕塑和油画作品，感受艺术的浪漫气息。
+
+### 6. **外滩源（BFC外滩金融中心）**
+   - **特色**：外滩的经典区域，融合了历史建筑和现代商业，适合白天和夜晚不同体验。
+   - **建议活动**：晚上可以在这里散步，欣赏黄浦江夜景，然后去附近的餐厅吃晚餐。
+
+### 7. **复兴公园**
+   - **特色**：上海为数不多的法式公园，环境幽静，适合喜欢自然的情侣。
+   - **建议活动**：可以一起骑双人自行车、散步，或者在公园里找个长椅聊天。
+
+### 8. **田子坊**
+   - **特色**：充满艺术气息的小巷，有很多手工艺品店和特色小店。
+   - **建议活动**：一起探索小巷中的隐藏店铺，或者找一家有特色的咖啡馆坐下来休息。
+
+### 9. **朱家角古镇**
+   - **特色**：上海周边的水乡，适合周末短途出游，环境安静，充满江南风情。
+   - **建议活动**：一起坐船、品尝当地小吃，感受古镇的宁静与浪漫。
+
+### 10. **上海自然博物馆**
+   - **特色**：虽然不算小众，但适合喜欢科普和自然的情侣。
+   - **建议活动**：一起探索自然奥秘，增长知识，同时享受二人世界的温馨。
+
+这些地方既能增进感情，又能让你们的约会充满新鲜感和趣味性。希望你们有一个愉快的周末！
+2025-08-23T21:18:03.001+08:00  INFO 22616 --- [yu-ai-agent] [           main] c.y.yuaiagent.advisor.MyLoggerAdvisor    : AI Response: 作为深耕恋爱心理领域的专家，我建议情侣约会选择一些能够增进感情、相对安静且具有独特体验的地方。以下是一些适合情侣的小众打卡地推荐：
+
+### 1. **思南公馆**
+   - **特色**：复古氛围浓厚，适合喜欢老上海风情的情侣。可以在这里散步、拍照，感受历史与现代的交融。
+   - **建议活动**：周末下午可以去旁边的思南书局喝杯咖啡，翻翻书，享受慢节奏的时光。
+
+### 2. **M50创意园区**
+   - **特色**：上海的艺术圣地，有很多独立画廊和创意小店，适合喜欢文艺的情侣。
+   - **建议活动**：可以一起逛画展、拍创意照片，甚至参加一些手工艺市集活动。
+
+### 3. **武康路街区**
+   - **特色**：充满欧洲风情的街道，有武康大楼、罗密欧阳台等网红打卡点，适合散步和拍照。
+   - **建议活动**：租一辆双人自行车环游街区，或者找一家有特色的咖啡店坐下来聊天。
+
+### 4. **徐家汇书院**
+   - **特色**：现代设计与传统文化结合，建筑本身就很吸引人，适合喜欢文艺和建筑的情侣。
+   - **建议活动**：一起看书、拍照，或者参加书院举办的文化活动。
+
+### 5. **上海油画雕塑院**
+   - **特色**：相对小众但艺术氛围浓厚，适合喜欢安静环境的情侣。
+   - **建议活动**：欣赏雕塑和油画作品，感受艺术的浪漫气息。
+
+### 6. **外滩源（BFC外滩金融中心）**
+   - **特色**：外滩的经典区域，融合了历史建筑和现代商业，适合白天和夜晚不同体验。
+   - **建议活动**：晚上可以在这里散步，欣赏黄浦江夜景，然后去附近的餐厅吃晚餐。
+
+### 7. **复兴公园**
+   - **特色**：上海为数不多的法式公园，环境幽静，适合喜欢自然的情侣。
+   - **建议活动**：可以一起骑双人自行车、散步，或者在公园里找个长椅聊天。
+
+### 8. **田子坊**
+   - **特色**：充满艺术气息的小巷，有很多手工艺品店和特色小店。
+   - **建议活动**：一起探索小巷中的隐藏店铺，或者找一家有特色的咖啡馆坐下来休息。
+
+### 9. **朱家角古镇**
+   - **特色**：上海周边的水乡，适合周末短途出游，环境安静，充满江南风情。
+   - **建议活动**：一起坐船、品尝当地小吃，感受古镇的宁静与浪漫。
+
+### 10. **上海自然博物馆**
+   - **特色**：虽然不算小众，但适合喜欢科普和自然的情侣。
+   - **建议活动**：一起探索自然奥秘，增长知识，同时享受二人世界的温馨。
+
+这些地方既能增进感情，又能让你们的约会充满新鲜感和趣味性。希望你们有一个愉快的周末！
+2025-08-23T21:18:03.002+08:00  INFO 22616 --- [yu-ai-agent] [           main] com.yupi.yuaiagent.app.LoveApp           : content: 作为深耕恋爱心理领域的专家，我建议情侣约会选择一些能够增进感情、相对安静且具有独特体验的地方。以下是一些适合情侣的小众打卡地推荐：
+
+### 1. **思南公馆**
+   - **特色**：复古氛围浓厚，适合喜欢老上海风情的情侣。可以在这里散步、拍照，感受历史与现代的交融。
+   - **建议活动**：周末下午可以去旁边的思南书局喝杯咖啡，翻翻书，享受慢节奏的时光。
+
+### 2. **M50创意园区**
+   - **特色**：上海的艺术圣地，有很多独立画廊和创意小店，适合喜欢文艺的情侣。
+   - **建议活动**：可以一起逛画展、拍创意照片，甚至参加一些手工艺市集活动。
+
+### 3. **武康路街区**
+   - **特色**：充满欧洲风情的街道，有武康大楼、罗密欧阳台等网红打卡点，适合散步和拍照。
+   - **建议活动**：租一辆双人自行车环游街区，或者找一家有特色的咖啡店坐下来聊天。
+
+### 4. **徐家汇书院**
+   - **特色**：现代设计与传统文化结合，建筑本身就很吸引人，适合喜欢文艺和建筑的情侣。
+   - **建议活动**：一起看书、拍照，或者参加书院举办的文化活动。
+
+### 5. **上海油画雕塑院**
+   - **特色**：相对小众但艺术氛围浓厚，适合喜欢安静环境的情侣。
+   - **建议活动**：欣赏雕塑和油画作品，感受艺术的浪漫气息。
+
+### 6. **外滩源（BFC外滩金融中心）**
+   - **特色**：外滩的经典区域，融合了历史建筑和现代商业，适合白天和夜晚不同体验。
+   - **建议活动**：晚上可以在这里散步，欣赏黄浦江夜景，然后去附近的餐厅吃晚餐。
+
+### 7. **复兴公园**
+   - **特色**：上海为数不多的法式公园，环境幽静，适合喜欢自然的情侣。
+   - **建议活动**：可以一起骑双人自行车、散步，或者在公园里找个长椅聊天。
+
+### 8. **田子坊**
+   - **特色**：充满艺术气息的小巷，有很多手工艺品店和特色小店。
+   - **建议活动**：一起探索小巷中的隐藏店铺，或者找一家有特色的咖啡馆坐下来休息。
+
+### 9. **朱家角古镇**
+   - **特色**：上海周边的水乡，适合周末短途出游，环境安静，充满江南风情。
+   - **建议活动**：一起坐船、品尝当地小吃，感受古镇的宁静与浪漫。
+
+### 10. **上海自然博物馆**
+   - **特色**：虽然不算小众，但适合喜欢科普和自然的情侣。
+   - **建议活动**：一起探索自然奥秘，增长知识，同时享受二人世界的温馨。
+
+这些地方既能增进感情，又能让你们的约会充满新鲜感和趣味性。希望你们有一个愉快的周末！
+2025-08-23T21:18:03.004+08:00  INFO 22616 --- [yu-ai-agent] [           main] c.y.yuaiagent.advisor.MyLoggerAdvisor    : AI Request: 最近和对象吵架了，看看编程导航网站（codefather.cn）的其他情侣是怎么解决矛盾的？
+2025-08-23T21:18:03.004+08:00  INFO 22616 --- [yu-ai-agent] [           main] c.y.yuaiagent.advisor.MyLoggerAdvisor    : AI Request: 最近和对象吵架了，看看编程导航网站（codefather.cn）的其他情侣是怎么解决矛盾的？
+2025-08-23T21:18:09.485+08:00  INFO 22616 --- [yu-ai-agent] [           main] c.y.yuaiagent.advisor.MyLoggerAdvisor    : AI Response: 从我获取的内容来看，这是一个编程学习交流社区的主页，它提供各种编程教程、资源以及交流平台。不过，我没有找到与情侣矛盾解决直接相关的信息。
+
+如果你希望了解情侣之间如何处理矛盾，我可以为你提供一些通用建议和心理学方法。如果你愿意，也可以详细描述你与对象之间发生矛盾的具体情况，这样我可以更有针对性地为你提供建议。
+
+你愿意和我具体说说你吵架的原因和过程吗？
+2025-08-23T21:18:09.486+08:00  INFO 22616 --- [yu-ai-agent] [           main] c.y.yuaiagent.advisor.MyLoggerAdvisor    : AI Response: 从我获取的内容来看，这是一个编程学习交流社区的主页，它提供各种编程教程、资源以及交流平台。不过，我没有找到与情侣矛盾解决直接相关的信息。
+
+如果你希望了解情侣之间如何处理矛盾，我可以为你提供一些通用建议和心理学方法。如果你愿意，也可以详细描述你与对象之间发生矛盾的具体情况，这样我可以更有针对性地为你提供建议。
+
+你愿意和我具体说说你吵架的原因和过程吗？
+2025-08-23T21:18:09.493+08:00  INFO 22616 --- [yu-ai-agent] [           main] com.yupi.yuaiagent.app.LoveApp           : content: 从我获取的内容来看，这是一个编程学习交流社区的主页，它提供各种编程教程、资源以及交流平台。不过，我没有找到与情侣矛盾解决直接相关的信息。
+
+如果你希望了解情侣之间如何处理矛盾，我可以为你提供一些通用建议和心理学方法。如果你愿意，也可以详细描述你与对象之间发生矛盾的具体情况，这样我可以更有针对性地为你提供建议。
+
+你愿意和我具体说说你吵架的原因和过程吗？
+2025-08-23T21:18:09.494+08:00  INFO 22616 --- [yu-ai-agent] [           main] c.y.yuaiagent.advisor.MyLoggerAdvisor    : AI Request: 直接下载一张适合做手机壁纸的星空情侣图片为文件
+2025-08-23T21:18:09.494+08:00  INFO 22616 --- [yu-ai-agent] [           main] c.y.yuaiagent.advisor.MyLoggerAdvisor    : AI Request: 直接下载一张适合做手机壁纸的星空情侣图片为文件
+2025-08-23T21:18:21.458+08:00  INFO 22616 --- [yu-ai-agent] [           main] c.y.yuaiagent.advisor.MyLoggerAdvisor    : AI Response: 成功下载了星空情侣壁纸，文件保存路径为：C:\code\yu-ai-agent\tmp\download\星空情侣壁纸.jpg。
+
+是否需要我为您生成一个PDF文件，里面包含这张图片以及一些关于如何维护恋爱关系的小贴士？这可以作为一个浪漫的数字礼物。如果需要，请确认，我将立即开始准备。
+2025-08-23T21:18:21.458+08:00  INFO 22616 --- [yu-ai-agent] [           main] c.y.yuaiagent.advisor.MyLoggerAdvisor    : AI Response: 成功下载了星空情侣壁纸，文件保存路径为：C:\code\yu-ai-agent\tmp\download\星空情侣壁纸.jpg。
+
+是否需要我为您生成一个PDF文件，里面包含这张图片以及一些关于如何维护恋爱关系的小贴士？这可以作为一个浪漫的数字礼物。如果需要，请确认，我将立即开始准备。
+2025-08-23T21:18:21.459+08:00  INFO 22616 --- [yu-ai-agent] [           main] com.yupi.yuaiagent.app.LoveApp           : content: 成功下载了星空情侣壁纸，文件保存路径为：C:\code\yu-ai-agent\tmp\download\星空情侣壁纸.jpg。
+
+是否需要我为您生成一个PDF文件，里面包含这张图片以及一些关于如何维护恋爱关系的小贴士？这可以作为一个浪漫的数字礼物。如果需要，请确认，我将立即开始准备。
+2025-08-23T21:18:21.460+08:00  INFO 22616 --- [yu-ai-agent] [           main] c.y.yuaiagent.advisor.MyLoggerAdvisor    : AI Request: 执行 Python3 脚本来生成数据分析报告
+2025-08-23T21:18:21.461+08:00  INFO 22616 --- [yu-ai-agent] [           main] c.y.yuaiagent.advisor.MyLoggerAdvisor    : AI Request: 执行 Python3 脚本来生成数据分析报告
+2025-08-23T21:18:27.805+08:00  INFO 22616 --- [yu-ai-agent] [           main] c.y.yuaiagent.advisor.MyLoggerAdvisor    : AI Response: 看起来执行 Python3 脚本时发生了错误。请确保以下几点：
+
+1. **脚本文件存在**：确认 `generate_report.py` 文件存在于当前目录，或者提供完整的文件路径。
+2. **Python环境安装**：确认您的系统上已安装 Python3，并且配置正确。
+3. **脚本权限**：确保脚本具有可执行权限，可以尝试运行 `chmod +x generate_report.py` 来赋予执行权限（如果适用）。
+4. **脚本内容**：确保脚本中没有语法错误，可以尝试手动检查脚本内容。
+
+您是否需要我进一步协助排查问题？
+2025-08-23T21:18:27.805+08:00  INFO 22616 --- [yu-ai-agent] [           main] c.y.yuaiagent.advisor.MyLoggerAdvisor    : AI Response: 看起来执行 Python3 脚本时发生了错误。请确保以下几点：
+
+1. **脚本文件存在**：确认 `generate_report.py` 文件存在于当前目录，或者提供完整的文件路径。
+2. **Python环境安装**：确认您的系统上已安装 Python3，并且配置正确。
+3. **脚本权限**：确保脚本具有可执行权限，可以尝试运行 `chmod +x generate_report.py` 来赋予执行权限（如果适用）。
+4. **脚本内容**：确保脚本中没有语法错误，可以尝试手动检查脚本内容。
+
+您是否需要我进一步协助排查问题？
+2025-08-23T21:18:27.806+08:00  INFO 22616 --- [yu-ai-agent] [           main] com.yupi.yuaiagent.app.LoveApp           : content: 看起来执行 Python3 脚本时发生了错误。请确保以下几点：
+
+1. **脚本文件存在**：确认 `generate_report.py` 文件存在于当前目录，或者提供完整的文件路径。
+2. **Python环境安装**：确认您的系统上已安装 Python3，并且配置正确。
+3. **脚本权限**：确保脚本具有可执行权限，可以尝试运行 `chmod +x generate_report.py` 来赋予执行权限（如果适用）。
+4. **脚本内容**：确保脚本中没有语法错误，可以尝试手动检查脚本内容。
+
+您是否需要我进一步协助排查问题？
+2025-08-23T21:18:27.807+08:00  INFO 22616 --- [yu-ai-agent] [           main] c.y.yuaiagent.advisor.MyLoggerAdvisor    : AI Request: 保存我的恋爱档案为文件
+2025-08-23T21:18:27.807+08:00  INFO 22616 --- [yu-ai-agent] [           main] c.y.yuaiagent.advisor.MyLoggerAdvisor    : AI Request: 保存我的恋爱档案为文件
+2025-08-23T21:18:31.713+08:00  INFO 22616 --- [yu-ai-agent] [           main] c.y.yuaiagent.advisor.MyLoggerAdvisor    : AI Response: 当然可以！请告诉我你希望保存的恋爱档案内容，我可以帮你生成并保存为文件。你可以提供以下信息：
+
+1. **个人情况**：你的年龄、兴趣爱好、目前的感情状态（单身、恋爱中、已婚等）。
+2. **恋爱经历**：过往的感情经历或目前的感情状况。
+3. **困扰问题**：你在恋爱中遇到的困扰，比如沟通问题、社交圈拓展、家庭责任等。
+4. **期望与目标**：你对理想伴侣或未来感情生活的期待。
+
+提供这些信息后，我会为你生成一份专属的恋爱档案并保存为文件。
+2025-08-23T21:18:31.714+08:00  INFO 22616 --- [yu-ai-agent] [           main] c.y.yuaiagent.advisor.MyLoggerAdvisor    : AI Response: 当然可以！请告诉我你希望保存的恋爱档案内容，我可以帮你生成并保存为文件。你可以提供以下信息：
+
+1. **个人情况**：你的年龄、兴趣爱好、目前的感情状态（单身、恋爱中、已婚等）。
+2. **恋爱经历**：过往的感情经历或目前的感情状况。
+3. **困扰问题**：你在恋爱中遇到的困扰，比如沟通问题、社交圈拓展、家庭责任等。
+4. **期望与目标**：你对理想伴侣或未来感情生活的期待。
+
+提供这些信息后，我会为你生成一份专属的恋爱档案并保存为文件。
+2025-08-23T21:18:31.720+08:00  INFO 22616 --- [yu-ai-agent] [           main] com.yupi.yuaiagent.app.LoveApp           : content: 当然可以！请告诉我你希望保存的恋爱档案内容，我可以帮你生成并保存为文件。你可以提供以下信息：
+
+1. **个人情况**：你的年龄、兴趣爱好、目前的感情状态（单身、恋爱中、已婚等）。
+2. **恋爱经历**：过往的感情经历或目前的感情状况。
+3. **困扰问题**：你在恋爱中遇到的困扰，比如沟通问题、社交圈拓展、家庭责任等。
+4. **期望与目标**：你对理想伴侣或未来感情生活的期待。
+
+提供这些信息后，我会为你生成一份专属的恋爱档案并保存为文件。
+2025-08-23T21:18:31.721+08:00  INFO 22616 --- [yu-ai-agent] [           main] c.y.yuaiagent.advisor.MyLoggerAdvisor    : AI Request: 生成一份‘七夕约会计划’PDF，包含餐厅预订、活动流程和礼物清单
+2025-08-23T21:18:31.721+08:00  INFO 22616 --- [yu-ai-agent] [           main] c.y.yuaiagent.advisor.MyLoggerAdvisor    : AI Request: 生成一份‘七夕约会计划’PDF，包含餐厅预订、活动流程和礼物清单
+2025-08-23T21:19:16.977+08:00  INFO 22616 --- [yu-ai-agent] [           main] c.y.yuaiagent.advisor.MyLoggerAdvisor    : AI Response: 你的“七夕约会计划”PDF已经成功生成！你可以通过以下方式查看或下载该文件：
+
+- **在线查看**：你可以使用在线PDF查看工具直接浏览文件内容。
+- **下载文件**：如果你需要将文件保存到本地设备，可以下载附件。
+
+如果需要，我也可以帮你将这份PDF发送到你的邮箱或进行其他操作。希望这份计划能助你们度过一个浪漫而难忘的七夕节！如果还有其他问题或需求，请随时告诉我。
+2025-08-23T21:19:16.978+08:00  INFO 22616 --- [yu-ai-agent] [           main] c.y.yuaiagent.advisor.MyLoggerAdvisor    : AI Response: 你的“七夕约会计划”PDF已经成功生成！你可以通过以下方式查看或下载该文件：
+
+- **在线查看**：你可以使用在线PDF查看工具直接浏览文件内容。
+- **下载文件**：如果你需要将文件保存到本地设备，可以下载附件。
+
+如果需要，我也可以帮你将这份PDF发送到你的邮箱或进行其他操作。希望这份计划能助你们度过一个浪漫而难忘的七夕节！如果还有其他问题或需求，请随时告诉我。
+2025-08-23T21:19:16.979+08:00  INFO 22616 --- [yu-ai-agent] [           main] com.yupi.yuaiagent.app.LoveApp           : content: 你的“七夕约会计划”PDF已经成功生成！你可以通过以下方式查看或下载该文件：
+
+- **在线查看**：你可以使用在线PDF查看工具直接浏览文件内容。
+- **下载文件**：如果你需要将文件保存到本地设备，可以下载附件。
+
+如果需要，我也可以帮你将这份PDF发送到你的邮箱或进行其他操作。希望这份计划能助你们度过一个浪漫而难忘的七夕节！如果还有其他问题或需求，请随时告诉我。
+]]></system-out>
+  </testcase>
+  <testcase name="doChatWithReport" classname="com.yupi.yuaiagent.app.LoveAppTest" time="3.753">
+    <system-out><![CDATA[2025-08-23T21:19:17.022+08:00  INFO 22616 --- [yu-ai-agent] [           main] c.y.yuaiagent.advisor.MyLoggerAdvisor    : AI Request: 你好，我是程序员鱼皮,我想让另一半更爱我，但我不知道该怎么做
+2025-08-23T21:19:20.725+08:00  INFO 22616 --- [yu-ai-agent] [           main] c.y.yuaiagent.advisor.MyLoggerAdvisor    : AI Response: {
+  "suggestions": [
+    "尝试与另一半建立更深层次的情感交流，分享你的内心想法和感受。",
+    "了解并尊重对方的兴趣爱好，积极参与其中，增进彼此之间的默契。",
+    "提升自己的吸引力，比如培养良好的生活习惯、拓展社交圈和兴趣爱好。",
+    "表达感激和欣赏，让对方感受到被重视和爱。",
+    "制定共同的目标，例如一起规划未来，增加彼此之间的依赖感和亲密感。"
+  ],
+  "title": "鱼皮的恋爱报告"
+}
+2025-08-23T21:19:20.734+08:00  INFO 22616 --- [yu-ai-agent] [           main] com.yupi.yuaiagent.app.LoveApp           : loveReport: LoveReport[title=鱼皮的恋爱报告, suggestions=[尝试与另一半建立更深层次的情感交流，分享你的内心想法和感受。, 了解并尊重对方的兴趣爱好，积极参与其中，增进彼此之间的默契。, 提升自己的吸引力，比如培养良好的生活习惯、拓展社交圈和兴趣爱好。, 表达感激和欣赏，让对方感受到被重视和爱。, 制定共同的目标，例如一起规划未来，增加彼此之间的依赖感和亲密感。]]
+]]></system-out>
+  </testcase>
+</testsuite>
