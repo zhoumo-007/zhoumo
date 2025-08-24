@@ -1,0 +1,31 @@
+spring:
+ application:
+  name: yu-ai-agent
+ ai:
+   dashscope:
+     api-key: sk-291248502a4148f3a60e2bd4ed6b0a07
+     chat:
+       options:
+         model: qwen-plus
+   vectorstore:
+     pgvector:
+       index-type: HNSW
+       dimensions: 1536
+       distance-type: COSINE_DISTANCE
+       max-document-batch-size: 10000 # Optional: Maximum number of documents per batch
+
+
+ datasource:
+   url: jdbc:postgresql://rm-cn-h6k4edr2u000dkro.rwlb.rds.aliyuncs.com:5432/yu_ai_agent
+   username: my_user
+   password: ZWz123456
+
+server:
+  port: 8123
+  servlet:
+    context-path: /api
+
+
+
+
+
